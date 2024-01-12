@@ -51,6 +51,7 @@
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
+      <router-view></router-view>
 
       <!-- Other content -->
       <div class="main-content">
