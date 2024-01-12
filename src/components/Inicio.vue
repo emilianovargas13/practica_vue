@@ -1,13 +1,37 @@
 <template>
+    <div>
+      Inicio
+      <div>
+        <b-container>
+          <b-breadcrumb :items="items"></b-breadcrumb>
+        </b-container>
+      </div>
+    </div>
+  </template>
   
-</template>
-
-<script>
-export default {
-
-}
-</script>
-
-<style>
-
-</style>
+  <script>
+  import Vue from "vue";
+  
+  export default Vue.extend({
+    name: "Inicio",
+    data() {
+      return {
+        items: [
+          {
+            text: "Tercero",
+            href: "#",
+            to: { name: "tercero" },
+          },
+          {
+            text: "Main",
+            to: { name: "main" },
+          },
+          {
+            text: "Inicio",
+            active: true,
+          },
+        ],
+      };
+    },
+  });
+  </script>
