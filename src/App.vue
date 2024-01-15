@@ -22,10 +22,12 @@
             <b-nav-item>
               <b-link to="/tercero">Tercero</b-link>
             </b-nav-item>
+            <b-nav-item>
+              <b-link to="/LandsPage">Landspage</b-link>
+            </b-nav-item>
           </b-nav>
         </b-col>
         <b-col md="10">
-          <!-- add a router outlet -->
           <router-view />
         </b-col>
       </b-row>

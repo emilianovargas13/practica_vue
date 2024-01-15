@@ -7,7 +7,7 @@ const routes = [
     //la ruta base
     {
         path: "/",
-        redirect: "/incio",
+        redirect: "/inicio",
     },
     //rutas asociadas a los componentes
     {
@@ -36,7 +36,37 @@ const routes = [
                 name: "tercero",
                 component: () =>
                     import ("../components/Tercero.vue")
-            }
+            },
+            {
+                path: "/LandsPage",
+                name: "LandsPage",
+                component: () =>
+                    import ("../components/InicioLandspage.vue")
+            },
+            {
+                path: "/CatalogoEspacios",
+                name: "CatalogoEspacios",
+                component: () =>
+                    import ("../components/CatalogoEspacios.vue")
+            },
+            {
+                path: "/DetallesEspacio",
+                name: "DetallesEspacio",
+                component: () =>
+                    import ("../components/DetallesEspacio.vue")
+            },
+            {
+                path: "/InfoEspacios",
+                name: "InfoEspacios",
+                component: () =>
+                    import ("../components/InfoEspacios.vue")
+            },
+            {
+                path: "/OfertarEspacio",
+                name: "OfertarEspacio",
+                component: () =>
+                    import ("../components/OfertarEspacio.vue")
+            },
         ]
     }
 ];
