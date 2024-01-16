@@ -44,6 +44,18 @@ const routes = [
                     import ("../components/InicioLandspage.vue")
             },
             {
+                path: "/RentarEspacio",
+                name: "RentarEspacio",
+                component: () =>
+                    import ("../components/RentarEspacio.vue")
+            },
+            {
+                path: "/RentarTuEspacio",
+                name: "RentarTuEspacio",
+                component: () =>
+                    import ("../components/RentarTuEspacio.vue")
+            },
+            {
                 path: "/CatalogoEspacios",
                 name: "CatalogoEspacios",
                 component: () =>

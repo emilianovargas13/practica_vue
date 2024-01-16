@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <b-container>
+      <b-container fluid>
         <b-breadcrumb :items="items"></b-breadcrumb>
       </b-container>
     </div>
@@ -16,7 +16,7 @@
             Renta tu espacio a un precio justo a personas que lo necesitan.
           </b-card-text>
 
-          <b-button href="/#/OfertarEspacio" variant="primary">Ofertar</b-button>
+          <b-button href="/#/RentarTuEspacio" variant="primary">Ofertar</b-button>
         </b-card>
 
         <b-card title="Rentar un espacio" img-src="https://picsum.photos/seed/picsum/600/300" img-alt="Image" img-top tag="article"
@@ -25,7 +25,7 @@
             Encuentra el espacio que necesitas para tu evento.
           </b-card-text>
 
-          <b-button href="/#/CatalogoEspacios" variant="primary">Descubrir</b-button>
+          <b-button href="/#/RentarEspacio" variant="primary">Descubrir</b-button>
         </b-card>
       </b-row>
 

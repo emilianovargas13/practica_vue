@@ -35,16 +35,18 @@ export default {
             this.$router.push({ name: 'DetallesEspacio', params: { id: item.id } });
 
             // or use this.$router.push('/DetallesEspacio/' + item.id);
-            
+
         },
     },
     data() {
         return {
             items: [{
                 text: 'Lands Page',
-                to: {
-                    name: 'LandsPage'
-                },
+                to: { name: 'LandsPage'},
+            },
+            {
+                text: "Rentar un espacio",
+                to: { name: "RentarEspacio" },
             },
             {
                 text: 'Catalogo de Espacios',
