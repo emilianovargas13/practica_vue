@@ -79,6 +79,12 @@ const routes = [
                 component: () =>
                     import ("../components/OfertarEspacio.vue")
             },
+            {
+                path: "/formularioUsuario",
+                name: "formularioUsuario",
+                component: () =>
+                    import ("../components/formularioUsuario.vue")
+            },
         ]
     }
 ];
