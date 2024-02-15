@@ -28,6 +28,9 @@
             <b-nav-item>
               <b-link to="/formularioUsuario">Formulario Usuario</b-link>
             </b-nav-item>
+            <b-nav-item>
+              <b-link to="/peliculas">Peliculas</b-link>
+            </b-nav-item>
           </b-nav>
         </b-col>
         <b-col md="10">
