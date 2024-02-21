@@ -42,7 +42,7 @@
                 <b-row>
                   <b-col cols="12" md="4">
                     <b-form-group label="Fecha de publicación">
-                      <b-datepicker v-model="seachForm.publishDate"></b-datepicker>
+                      <b-datepicker v-model="seachForm.publishDate" required></b-datepicker>
                     </b-form-group>
                   </b-col>
                   <b-col cols="12" md="4">
