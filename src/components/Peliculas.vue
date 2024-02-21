@@ -1,7 +1,7 @@
 <template>
   <b-container fluid>
     <b-row>
-      <createNewPeli :genres="genres" :genresToSend="genresToSend" :movies="movies"/>
+      <createNewPeli :genres="genres" :genresToSend="genresToSend" :movies="movies" @movieRegistered="onMovieRegistered" />
       <b-button class="mt-3" size="lg" v-b-modal.modalon>Registrar película</b-button>
       <b-card>
         <b-card-header>
@@ -156,6 +156,10 @@ export default {
       }
     },
 
+    async onMovieRegistered() {
+      // Reload the movies after a new movie is registered
+      this.fetchMovies();
+    },
   }
 };
 </script>
