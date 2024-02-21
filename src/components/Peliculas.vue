@@ -8,6 +8,7 @@
           <h3 class="text-center">Peliculas</h3>
         </b-card-header>
         <b-card-body>
+          
           <!-- card where are gonna to show the filter options. search by name, directos, range of years, genres and by publish date -->
           <b-card>
             <b-card-body>
