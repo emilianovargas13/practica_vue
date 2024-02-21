@@ -29,6 +29,7 @@
 </template>
   
 <script>
+import axios from 'axios';
 export default {
   props: {
     genres: Array,
@@ -56,14 +57,9 @@ export default {
   methods: {
     onSubmit2(evt) {
       evt.preventDefault();
-      this.$emit('onSubmit', this.form);
-      this.form = {
-        name: '',
-        genre: '',
-        year: '',
-        director: '',
-        publishDate: '',
-      };
+      this.$emit('onSubmit2', this.form);
+
+      this.registerMovie();
     },
     onReset(evt) {
       evt.preventDefault();
@@ -78,6 +74,7 @@ export default {
     async registerMovie() {
       try {
         if (this.form.name && this.form.genre && this.form.year) {
+          console.log("ey")
 
           this.form.genre = this.genresToSend.find(genre => genre.id === this.form.genre);
 
@@ -89,10 +86,8 @@ export default {
             director: this.form.director,
             publishDate: this.form.publishDate,
           });
-
+          this.$emit('movieRegistered');
           alert('¡Película registrada con éxito!');
-          this.onReset(); // Limpiar el formulario después de registrar la película
-          this.fetchMovies(); // Recargar las películas después de registrar una nueva
         };
       } catch (error) {
         console.error('Error al registrar la película:', error);
